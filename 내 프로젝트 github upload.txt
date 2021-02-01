@@ -1,0 +1,38 @@
+내 프로젝트 github upload
+
+1. github repository 생성
+	https://github.com/callor접속
+	New repository
+
+2. local 폴더 repository 선언
+= local repository 만들기
+	local 폴더에서 git bash here
+
+	git init
+
+3. config 설정
+= local repository와
+	remote repository의 권한, 보안 설정
+
+	git config --local user.name callor
+	git config --local user.email callor@callor.com
+
+4. remote 설정
+	
+	upload할 remote repository주소 별명 설정
+
+	git remote add origin https://github.com/callor/Biz_2021_01_403_java.git
+
+※ github 업로드 금지 설정
+로컬 폴더에 .gitignore 파일 생성
+	touch .gitignore
+	업로드 금지 목록작성
+
+5. 파일 add
+
+	git add .
+
+	= 현재 폴더의 모든 파일,폴더를 upload 하기 위해서 압축하라
+
+6. commit 설정
+7. push
