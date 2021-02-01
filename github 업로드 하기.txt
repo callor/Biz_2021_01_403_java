@@ -1,0 +1,28 @@
+로컬폴더를 github 와 연동하기
+
+1. 초기화 시작
+	git init
+
+2. 계정연결
+	git config --local user.name callor
+	git config --local user.email callor@callor.com
+
+3. repository 주소 연결
+	git remote add origin https://github.com/callor/Biz_403_01_java.git
+
+4. 로컬폴더의 프로젝트를 업로드 준비
+	
+	git add . 
+	
+	현재 폴더의 모든 것을 업로드 하도록 압축하라
+
+5. 업로드 커멘트 설정
+	git commit -m first
+
+6. 압축된 로컬 폴더를 업로드
+	git push -u origin master
+
+
+
+
+

@@ -1,0 +1,23 @@
+eclipse를 사용한 java project 생성
+1. project 생성
+	가. new / java Project
+	- project는 어플리케이션 이름
+	- 영문, 숫자 등을 조합하여 만듦
+
+2. package 생성
+	가. 프로젝트 생성 후
+		최초 package생성
+	나. package명명 방법
+		회사의 Domain Name을
+		거꾸로 시작하여 작성
+		예) https://callor.com 이면
+		com.callor.hello
+		- 3단계 package라고 한다.
+	다. 3단계 package를
+		base package 라고 부른다.
+
+2. 문법오류 : syntax error
+  - java 문법 규칙을 지키면서 코딩을 할때 대소문자, 빈칸, 세미콜론(;), 괄호(열고, 닫기의 쌍)등이 규칙에 맞지 않을 때 eclipse는 자동으로 감지를 하고
+  개발에게 알려준다.
+  - 문법오류가 발생하면 명령어, 명령문에 빨간색 계열 밑줄이 나타난다.
+

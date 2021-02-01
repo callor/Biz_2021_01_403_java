@@ -35,4 +35,11 @@
 	= 현재 폴더의 모든 파일,폴더를 upload 하기 위해서 압축하라
 
 6. commit 설정
+	현재 시점에 업로드한 정보의 
+	comment를 설정하는 것
+
+	git commit -m first
+
 7. push
+
+	git push -u origin master
