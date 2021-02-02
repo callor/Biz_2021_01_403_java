@@ -1,0 +1,18 @@
+github 설정 오류
+1. error: remote origin already exists.
+
+- 이미 remote 주소를 등록했는데 또다시 등록하려고 할때
+- 등록 remote 주소가 잘못되어 다시 등록하려고 하는데 이미 주소가 등록되어 다시 등록되지 않는 현상
+가. remote 주소를 삭제
+	
+	git remote remove origin
+
+나. 다시 등록한다.
+	
+	git remote add origin https://github.com/callor/Biz_2021_01_403_java.git
+
+	
+
+
+
+
