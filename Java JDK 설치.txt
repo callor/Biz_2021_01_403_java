@@ -1,0 +1,50 @@
+1. Java 개발자용 도구 설치
+	(Java Developer Tools Install)
+
+2. https://oracle.com 에 접속하여
+	JDK 파일을 다운로드
+	현재 최신 : JDK 15.x.x
+
+3. jdk 설치 : 파일 더블클릭 설치	
+4. jdk 설치 위치 확인
+	c:/Program files/java/jdk-15.x.x/bin
+
+5. jdk bin 폴더 주소 복사 해 오기
+	C:\Program Files\Java\jdk-15.0.2\bin
+
+6. 윈도우 환경 설정
+	가. 내PC/속성/고급 시스템 설정/
+		고급/환경변수/시스템 변수/
+
+	나. Path 변수 찾기/찾아서 클릭
+	다. 편집 클릭
+	라. 새로만들기
+	마. Jdk 주소 붙이기
+	바. 확인 눌러 창 닫기
+
+7. 윈도우 cmd 화면 열고 확인
+	java 입력했을때 "명령 없음.." 이 안나오면 정상
+
+8. 윈도우 cmd 화면에서 C:/Users/master
+	윈도우가 키보드로 명령을 입력한 후
+	Enter를 누르면 명령을 수행할 
+	준비가 되어 있다 라는 표식
+	Prompt라고 한다.
+
+9. java 코딩 절차
+	가. java 언어 문법에 맞는
+		text  문서를 만든다
+		text 문서 : source 코드 파일
+		*.java
+		파일이름 첫글자 대문자
+	나. javac 도구를 사용하여 컴파일
+		javac : 컴파일러 라고 한다
+		*.class 파일이 생성된다.
+
+	다. java 도구를 사용하여
+		*.class 파일 내용을
+		컴퓨터에 주입한다.
+
+	라. 그리고 결과를 확인 
+
+
