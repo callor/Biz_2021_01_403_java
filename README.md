@@ -9,6 +9,6 @@
 * java 프로그래밍 2일차 
 * 클래스, 패키지, main() method
 
-#ffffff
-#ddeeaa
-rgb(100,200,300)
+##### 2021-02-3
+* github를 사용하여 프로젝트 공유하기
+* 1. README.md 파일에 내용 추가
