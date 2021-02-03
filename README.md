@@ -13,3 +13,8 @@
 * github를 사용하여 프로젝트 공유하기
 * 1. README.md 파일에 내용 추가
 *	README 편집하기
+*	콜론( : ), 세미콜론( ; )
+
+##### git commit 명령 오류 상황
+* git commit -m 까지만 입력하면 : error 발생
+* git commit 까지만 입력하면 : vi editor
