@@ -1,4 +1,4 @@
-package com.callor.start.jdk;
+package com.callor.start.jdk.keyinput;
 
 import java.util.Scanner;
 
