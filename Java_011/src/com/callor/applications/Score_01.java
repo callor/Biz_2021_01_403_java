@@ -64,7 +64,9 @@ public class Score_01 {
 		fAvg = intSum  / 3.0f; // / 3.0d
 		fAvg = intSum  / (float)3;
 		
-		System.out.print(intKor + "\t");
+		System.out.print(intSum + "\t");
+		System.out.println(fAvg);
+		System.out.println("========================");
 		
 		
 		
