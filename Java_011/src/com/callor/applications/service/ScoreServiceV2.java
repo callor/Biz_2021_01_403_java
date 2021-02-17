@@ -42,6 +42,7 @@ public class ScoreServiceV2 {
 		System.out.print(intKor +"\t");
 		System.out.print(intEng +"\t");
 		System.out.print(intMath +"\t");
+		
 		int intSum = intKor + intEng + intMath;
 		
 	}
