@@ -24,6 +24,10 @@ public class ClassServiceV3 {
 	public void scope() {
 		System.out.print("숫자를 입력하세요");
 		int intNum1 = scan.nextInt();
+		
+		// method 선언명령문에 void 키워드가 있으면
+		// 이 위치에 return 명령문이 있는것과 같다
+		return;
 	}
 	
 	public void input() {
@@ -31,11 +35,17 @@ public class ClassServiceV3 {
 		intNum1 = scan.nextInt();
 		System.out.print("숫자 2 를 입력하세요");
 		intNum2 = scan.nextInt();
+		return;
 	}
 	
 	public void algebra() {
 		System.out.print(intNum1);
 		System.out.print(" + ");
+
+		if( 3 > 3) {
+			return;
+		}
+		
 		System.out.print(intNum2);
 		System.out.print(" = ");
 		System.out.println(intNum1+ intNum2);
