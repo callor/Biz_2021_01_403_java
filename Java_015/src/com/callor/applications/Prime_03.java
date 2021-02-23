@@ -8,12 +8,17 @@ public class Prime_03 {
 
 	public static void main(String[] args) {
 		
+		PrimeServiceV2 psV2 = new PrimeServiceV2();
+		System.out.println(psV2.prime(2));
+		
 		Scanner scan = new Scanner(System.in);
 		System.out.println("2 이상의 정수 입력");
 		System.out.print(">> ");
 		int num = scan.nextInt();
 		
-		PrimeServiceV2 psV2 = new PrimeServiceV2();
+		
+		
+		
 		
 		int result = psV2.prime(num);
 		if(result < 0) {
