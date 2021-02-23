@@ -9,9 +9,9 @@ public class PrimeServiceV2 {
 		
 		// if(소수이면) return num;
 		// else return -1;
-		for(int i = 1 ; i < num ; i++) {
+		for(int i = 2 ; i < num ; i++) {
 			// true 이면 소수가 아니다
-			if(num % (i + 1) == 0) {
+			if(num % i == 0) {
 				// prime() method 실행을 중단하고
 				// main() method에게 -1을 되돌려줘라
 				return -1;
