@@ -24,7 +24,8 @@ public class Score_02 {
 			intMath[i] = rnd.nextInt(100) + 1;
 		}
 		
-		ScoreServiceV1 ssV1 = new ScoreServiceV1();
+		ScoreServiceV1 ssV1 
+			= new ScoreServiceV1();
 
 		// 총점계산
 		// SSV2.scoreSum() method를 호출하여 총점 계산
@@ -38,7 +39,8 @@ public class Score_02 {
 			// scoreSum() 전달하고
 			// 결과를 다시 i 번째 학생의 총점에 저장
 			// intSum[i] : i 번째 학생의 총점 
-			int sum = ssV1.scoreSum(intKor[i], intEng[i],intMath[i]);
+			int sum 
+				= ssV1.scoreSum(intKor[i], intEng[1],intMath[i]);
 			intSum[i] = sum;
 		}
 		
