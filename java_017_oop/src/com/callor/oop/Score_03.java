@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import com.callor.oop.model.ScoreVO;
 
-public class Score_01 {
+public class Score_03 {
 
 	public static void main(String[] args) {
 		
@@ -15,7 +15,6 @@ public class Score_01 {
 		System.out.println("성적입력 시스템 v1");
 		System.out.println("=======================");
 
-		while(true) {
 			System.out.println("학생 이름을 입력하세요");
 			System.out.print(">> ");
 			String strName = scan.nextLine();
@@ -25,15 +24,13 @@ public class Score_01 {
 				System.out.println("국어점수를 입력하세요");
 				System.out.print(">> ");
 				String strKor = scan.nextLine();
-				try {
-					int intKor = Integer.valueOf(strKor);
-					// scoreVO.intKor = intKor;
-					scoreVO.setIntKor(strKor);
-					break;
-				} catch (Exception e) {
-					System.out.println("국어점수는 숫자로만 입력");
-					continue;
-				}
+
+				scoreVO.setIntKor(strKor);
+				
+				// intKor에 -1이 담겨 있으면 
+				// 다시 입력을 하도록해야 한다
+				if(scoreVO.intKor < 0) { continue; }
+			
 			}
 
 			System.out.println("영어점수를 입력하세요");
