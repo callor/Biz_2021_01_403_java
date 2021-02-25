@@ -8,6 +8,8 @@ public class Score_07 {
 		
 		ScoreVO scoreVO = new ScoreVO();
 		
+		scoreVO.
+		
 		
 	}
 	
