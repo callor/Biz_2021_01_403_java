@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.callor.oop.model.CartVO;
 
-public class CartList {
+public class CartList_01 {
 
 	public static void main(String[] args) {
 
