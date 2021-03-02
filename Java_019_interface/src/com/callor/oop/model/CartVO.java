@@ -14,9 +14,10 @@ public class CartVO {
 	private String standard;
 	private String date;
 	private String time;
-	private String qty;
-	private String price;
-	private String total;
+	
+	private int qty;
+	private int price;
+	private int total;
 	public String getUserName() {
 		return userName;
 	}
@@ -47,30 +48,31 @@ public class CartVO {
 	public void setTime(String time) {
 		this.time = time;
 	}
-	public String getQty() {
+	public int getQty() {
 		return qty;
 	}
-	public void setQty(String qty) {
+	public void setQty(int qty) {
 		this.qty = qty;
 	}
-	public String getPrice() {
+	public int getPrice() {
 		return price;
 	}
-	public void setPrice(String price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
-	public String getTotal() {
+	public int getTotal() {
 		return total;
 	}
-	public void setTotal(String total) {
+	public void setTotal(int total) {
 		this.total = total;
 	}
-	
 	@Override
 	public String toString() {
 		return "CartVO [userName=" + userName + ", productName=" + productName + ", standard=" + standard + ", date="
 				+ date + ", time=" + time + ", qty=" + qty + ", price=" + price + ", total=" + total + "]";
 	}
+
+	
 	
 	
 }
