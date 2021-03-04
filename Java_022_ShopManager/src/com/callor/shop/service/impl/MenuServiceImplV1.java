@@ -41,6 +41,8 @@ public class MenuServiceImplV1 implements MenuService{
 					Values.MENU_ALL_LIST);
 			System.out.printf("%d. 구매자별 장바구니 보기\n",
 					Values.MENU_USER_LIST);
+			System.out.printf("%d. 장바구니 파일 저장\n",
+					Values.MENU_SAVE_CART_LIST);
 			
 			System.out.println("QUIT. 업무종료");
 			System.out.println(Values.sLine);
