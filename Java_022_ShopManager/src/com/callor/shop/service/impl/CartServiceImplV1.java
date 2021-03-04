@@ -88,7 +88,7 @@ public class CartServiceImplV1 implements CartService{
 		System.out.printf("합계: %d\n",
 				cartVO.getTotal());
 		System.out.println(Values.dLine);
-		System.out.println("추가할까요(YES)?");
+		System.out.print("추가할까요(YES)?");
 		String strYesNo = scan.nextLine();
 		if(strYesNo.equals("YES")) {
 			cartList.add(cartVO);
@@ -98,16 +98,73 @@ public class CartServiceImplV1 implements CartService{
 		}
 	}
 
+	/*
+	 * private으로 선언된 method는
+	 * 현재 클래스에서만 호출이 가능한 method
+	 */
+	private void printHeader() {
+		System.out.println(Values.dLine);
+		System.out.println("구매자\t상품명\t"
+				+ "단가\t수량\t금액");
+		System.out.println(Values.sLine);
+	}
+	
+	private void printBody(CartVO cartVO) {
+		// cartVO에서 각 인스턴스 변수를 읽어서 출력
+		System.out.print(cartVO.getUserName()+"\t" );
+		System.out.printf("%s\t",cartVO.getProductName());
+		System.out.printf("%d\t",cartVO.getQty());
+		System.out.printf("%d\t",cartVO.getPrice());
+		System.out.printf("%d\n",cartVO.getTotal());
+	}
+	
 	@Override
 	public void printAllCart() {
-		// TODO 장바구니 전체 보기
-		
+
+		this.printHeader();
+
+		// 카트리스트의 상품개수를 
+		//		계산하여 nSize에 저장
+		int nSize = cartList.size();
+		for(int i = 0 ; i < nSize ; i++) {
+			/*
+			 *  cartList.get(i) 는
+			 *  cartList에 저장되어있는 i 번째 요소
+			 *  이 요소는 
+			 *  결국 CartVO 클래스로 만든 객체
+			 */
+			/*
+			System.out.print(
+					cartList.get(i).getUserName() 
+					+ "\t");
+			System.out.print(
+					cartList.get(i).getProductName() 
+					+ "\t");
+			*/
+			// cartList의 i번째 요소를 getter하여
+			//	임시( for() 명령 내에 있기때문에 ) 선언된
+			// 	CartVO클래스의 cartVO 객체에 저장하라
+			CartVO cartVO = cartList.get(i);
+			this.printBody(cartVO);
+		}
+		System.out.println(Values.sLine);
 	}
 
 	@Override
 	public void printUserCart() {
-		// TODO 구매자별 장바구니 보기
+		System.out.println(Values.dLine);
+		System.out.println("구매자별 리스트");
+		System.out.println("구매자명 >> ");
+		String strUserName = scan.nextLine();
 		
+		this.printHeader();
+		int nSize = cartList.size();
+		for(int i = 0 ; i < nSize ; i++) {
+			CartVO cartVO = cartList.get(i);
+			if(cartVO.getUserName().equals(strUserName)) {
+				this.printBody(cartVO);	
+			}
+		}
 	}
 
 }

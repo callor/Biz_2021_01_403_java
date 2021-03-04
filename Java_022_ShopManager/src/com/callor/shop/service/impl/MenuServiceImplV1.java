@@ -44,7 +44,7 @@ public class MenuServiceImplV1 implements MenuService{
 			
 			System.out.println("QUIT. 업무종료");
 			System.out.println(Values.sLine);
-			System.out.println("선택>> ");
+			System.out.print("선택>> ");
 			String strMenu = scan.nextLine();
 			if(strMenu.equals("QUIT")) {
 				return null;
