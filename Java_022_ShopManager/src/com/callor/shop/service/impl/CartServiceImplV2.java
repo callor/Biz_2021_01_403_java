@@ -28,7 +28,7 @@ public class CartServiceImplV2
 		scan = new Scanner(System.in);
 		cartList = new ArrayList<CartVO>();
 		cartFileName 
-			= "src/com/callor/shop/cartlist.csv";
+			= "src/com/callor/shop/test.txt";
 	}
 	
 	/*
@@ -74,8 +74,10 @@ public class CartServiceImplV2
 		 *    따라서 FiltWriter 객체를
 		 *    생성할때는 반드시 try...catch로 묶어야한다
 		 */
+		
 		try {
 			fileWriter = new FileWriter(cartFileName);
+			
 			// 여기까지 코드가 정상 수행되면
 			// fileWriter는 System.in 처럼 파일과
 			//	java 코드간에 연결하는 통로를 형성한다
