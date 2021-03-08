@@ -211,6 +211,7 @@ public class ScoreServiceimplV1 implements ScoreService {
 		}
 		
 		// 학번순으로 정렬
+		// 학번을 숫자로 변경한 후 정렬
 		for(int i = 0 ; i < nSize ; i++) {
 			for(int j = i+1 ; j < nSize ; j++) {
 				
@@ -220,6 +221,20 @@ public class ScoreServiceimplV1 implements ScoreService {
 					ScoreVO temp = scoreList.get(i);
 					scoreList.set(i,scoreList.get(j));
 					scoreList.set(j,temp);
+				}
+			}
+		} // for end
+		
+		// 문자열 비교 method를 사용하여 정렬
+		for(int i = 0 ; i < nSize ; i++) {
+			for(int j = i + 1; j < nSize ; j++) {
+				ScoreVO voI = scoreList.get(i);
+				ScoreVO voJ = scoreList.get(j);
+				// voI의 학번이 뒷번호인경우
+				if(voI.getStNum().compareTo(voJ.getStNum()) > 0 ) {
+					ScoreVO tVo = scoreList.get(i);
+					scoreList.set(i, scoreList.get(j));
+					scoreList.set(j, tVo);
 				}
 			}
 		}
