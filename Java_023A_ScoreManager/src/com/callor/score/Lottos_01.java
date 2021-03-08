@@ -21,6 +21,29 @@ public class Lottos_01 {
 			nums[num2] = temp;
 		}
 		
+		int lottos[] = new int[6];
+		for(int i = 0 ; i < 6 ;i++) {
+			lottos[i] = nums[i];
+		}
+		for(int n : lottos) {
+			System.out.print(n + ","); 
+		}
+		System.out.println();
+		
+		for(int i = 0 ; i < lottos.length ; i++) {
+			for(int j = i + 1; j < lottos.length ; j++) {
+				if(lottos[i] > lottos[j]) {
+					int temp = lottos[i];
+					lottos[i] = lottos[j];
+					lottos[j] = temp;
+				}
+			}
+		}
+		for(int n : lottos) {
+			System.out.print(n + ",");
+		}
+		
+		
 	}
 	
 	
